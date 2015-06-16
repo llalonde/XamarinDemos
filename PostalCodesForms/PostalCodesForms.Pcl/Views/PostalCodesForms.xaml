@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PostalCodesForms.Views.PostalCodesForms">
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness">
+      <OnPlatform.iOS>
+        4, 20, 4, 0
+      </OnPlatform.iOS>
+      <OnPlatform.Android>
+        4,4,4,4
+      </OnPlatform.Android>
+      <OnPlatform.WinPhone>
+        4,4,4,4
+      </OnPlatform.WinPhone>
+    </OnPlatform>
+  </ContentPage.Padding>
+  <ContentPage.Resources>
+        <ResourceDictionary>
+          <!-- implicit style -->
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="21" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+          
+          <!-- explicit style -->
+          
+            <Style x:Key="ButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Accent"/>
+                <Setter Property="WidthRequest" Value="200"/>
+                <Setter Property="HeightRequest" Value="42"/>
+            </Style>
+           
+        </ResourceDictionary>
+    </ContentPage.Resources>
+  <StackLayout>
+    <!-- built-in style -->
+    <Label x:Name="FormTitle" 
+           Text="Postal Codes"
+           Style="{DynamicResource TitleStyle}"
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <Label Text="City:"  />
+      <Entry Text="{Binding City}" 
+             Grid.Column="1"  />
+      <Label Text="Province:" 
+             Grid.Row="1"  />
+      <Entry Text="{Binding Province}"  
+             Grid.Row="1" 
+             Grid.Column="1" />
+      <Label Text="Country:" 
+             Grid.Row="2" />
+      <Entry Text="{Binding Country}" 
+             Grid.Row="2" 
+             Grid.Column="1" />
+      <Button Text="search" 
+              Command="{Binding SearchCommand}" 
+              HorizontalOptions="Fill"
+              Grid.Row="3" 
+              Grid.ColumnSpan="2"/>
+    </Grid>
+    
+    <ListView ItemsSource="{Binding Places}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Grid>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="3*" />
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+              </Grid.RowDefinitions>
+              
+              <Label Text="{Binding PostalCode}" />
+              <Label Text="{Binding PlaceName}"
+                     VerticalOptions="StartAndExpand"
+                     Grid.Column="1" />
+              <BoxView WidthRequest="200" 
+                       HeightRequest="2" 
+                       Grid.Row="1" 
+                       Grid.ColumnSpan="2">
+                <OnPlatform x:TypeArguments="Color"
+                            Android="Lime"
+                            iOS="Transparent"
+                            WinPhone="Accent" />
+              </BoxView>
+            </Grid>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+  
+</ContentPage>

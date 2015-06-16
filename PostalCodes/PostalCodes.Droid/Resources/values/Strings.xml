@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">PostalCodes.Droid</string>
+	<string name="searchText">Search</string>
+	<string name="cityLabel">City:</string>
+	<string name="provinceLabel">Province:</string>
+	<string name="countryLabel">Country:</string>
+
+</resources>
