@@ -27,6 +27,7 @@ namespace VideoPlayerDemo.Droid
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+            
             SetContentView(Resource.Layout.Main);
             startingPosition = (bundle != null) ? bundle.GetInt(VideoPositionKey) : 0;
 
