@@ -63,11 +63,11 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\PostalCodes.PCL\PostalCodes.PCL.csproj">
-      <Project>{728FF67E-8961-4454-97B1-B61E7ED9CFEA}</Project>
+      <Project>{728ff67e-8961-4454-97b1-b61e7ed9cfea}</Project>
       <Name>PostalCodes.PCL</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
 </Project>

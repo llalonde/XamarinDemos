@@ -47,7 +47,7 @@ namespace PostalCodes.Droid
 
 			};
 		}
-
+        
 		private void DisplayMessage(string title, string message)
 		{
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
