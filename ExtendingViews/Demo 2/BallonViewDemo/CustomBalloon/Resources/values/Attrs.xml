@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <!-- The name of the styleable entity is, by convention,
+  the same name as the name of the class that defines the custom view-->
+  <declare-styleable name="MyBalloonView">
+    <attr name="showEmoji" format="boolean" />
+    <attr name="triangleHeight" format="integer" />
+    <attr name="accentColor" format="color" />
+    <attr name="balloonColor" format="color" />
+    <attr name="textColor" format="color" />
+    <attr name="text" format="string" />
+    <attr name="textSize" format="dimension" />
+  </declare-styleable>
+</resources>

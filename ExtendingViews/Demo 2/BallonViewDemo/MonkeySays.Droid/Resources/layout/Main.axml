@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+  <customballoon.MyBalloonView
+      android:id="@+id/MonkeyBalloon"
+      android:layout_width="0dp"
+      android:layout_height="60dp"
+      android:layout_margin="10dp"
+      custom:textSize="16dp"
+      custom:textColor="@color/White"
+      custom:showEmoji="true"
+      custom:balloonColor="@color/Purple"
+      custom:accentColor="@color/Pink"
+      custom:triangleHeight="30"
+      custom:text="Good afternoon!" />
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:src="@drawable/Monkey" />
+</LinearLayout>

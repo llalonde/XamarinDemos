@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomBalloon", "CustomBalloon\CustomBalloon.csproj", "{BB434C75-B60C-41F9-805B-73D76D0F9668}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkeySays.Droid", "MonkeySays.Droid\MonkeySays.Droid.csproj", "{4ACEDAF7-62CA-4F56-8D98-ADF7755CEE06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB434C75-B60C-41F9-805B-73D76D0F9668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB434C75-B60C-41F9-805B-73D76D0F9668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB434C75-B60C-41F9-805B-73D76D0F9668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB434C75-B60C-41F9-805B-73D76D0F9668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ACEDAF7-62CA-4F56-8D98-ADF7755CEE06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ACEDAF7-62CA-4F56-8D98-ADF7755CEE06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ACEDAF7-62CA-4F56-8D98-ADF7755CEE06}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4ACEDAF7-62CA-4F56-8D98-ADF7755CEE06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ACEDAF7-62CA-4F56-8D98-ADF7755CEE06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ACEDAF7-62CA-4F56-8D98-ADF7755CEE06}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
